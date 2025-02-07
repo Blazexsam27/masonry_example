@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.gallery-section .neon-gallery-section {
+  width: 80%;
+  min-height: 100vh;
+  position: relative;
+  columns: 250px;
+  margin-block: 2rem;
+}
+
+.gallery-section .neon-gallery-section img {
+  width: 100%;
+  margin-bottom: 1em;
+  transition: all 0.5s;
+  position: relative;
+  border: 3px solid;
+  z-index: 5;
+}
+
+.gallery-section .neon-gallery-section img:hover {
+  scale: 1.1;
+}
+
+.gallery-section .bg-title {
+  font-size: 19rem;
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  top: 25%;
+  z-index: 1;
+  text-align: center;
+  opacity: 0.4;
+}
+
+.gallery-section .bg-title::before {
+  content: attr(data-before);
+  position: absolute;
+  top: 5em;
+  inset: 0.66em 0 0 0;
+  z-index: -1;
+  color: #445022;
+}
